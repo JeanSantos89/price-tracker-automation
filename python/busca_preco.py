@@ -1,7 +1,7 @@
 import requests
 
 def buscar_produtos(produtoDesejado):
-    url = f"https://api.mercadolibre.com/sites/MLB/search?q={produtoDesejado}"
+    url = f"https://api.mercadolibre.com/items/${produtoDesejado}/prices"
     req = requests.get(url)
     data = req.json()
 

@@ -1,13 +1,13 @@
 import psycopg2
 
-def salvar_no_postgres(produtos):
+def salvar_no_bd(produtos):
     conn = psycopg2.connect(
-        dbname="seubanco",
-        user="seuusuario",
-        password="suasenha",
-        host="localhost",
-        port="5432"
-    )
+    dbname="",
+    user="",
+    password="",
+    host="",
+    port=""
+)
     cur = conn.cursor()
 
     cur.execute("""

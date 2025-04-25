@@ -1,6 +1,6 @@
 import sys
 from busca_preco import buscar_produtos
-
+from db import salvar_no_bd
 
 def main():
     produtoDesejado = sys.argv[1]
